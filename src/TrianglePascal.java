@@ -9,14 +9,14 @@ public class TrianglePascal {
         }
 
        public static void segitigaPascal(int n){
-            for (int i = 1; i <= n; i++) {
-                for (int j = 0; j <= n-i; j++) {
+            for (int line = 1; line <= n; line++) {
+                for (int j = 0; j <= n - line; j++) {
                     System.out.print(" ");
                 }
                     int c = 1;
-                    for (int k = 1; k <= i; k++) {
+                    for (int k = 1; k <= line; k++) {
                         System.out.print(c + " ");
-                        c = c * (i - k)/k;
+                        c = c * (line - k)/k;
                     }
                 System.out.println();
                 }
